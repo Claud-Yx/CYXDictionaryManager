@@ -11,9 +11,6 @@
     <Filter Include="Source Files\Word">
       <UniqueIdentifier>{5f212504-11eb-49fd-b63e-c913438e32e4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Word\Components">
-      <UniqueIdentifier>{197d9544-cdc6-48b6-be13-01dc94e068cb}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DictionaryManagerBase.cpp">
@@ -24,9 +21,6 @@
     </ClCompile>
     <ClCompile Include="common.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="WordComponentBase.cpp">
-      <Filter>Source Files\Word\Components</Filter>
     </ClCompile>
     <ClCompile Include="EnglishManager.cpp">
       <Filter>Source Files\Managers</Filter>
@@ -56,9 +50,6 @@
     </ClInclude>
     <ClInclude Include="..\Include\SpanishManager.h">
       <Filter>Source Files\Managers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Include\WordComponentBase.h">
-      <Filter>Source Files\Word\Components</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -27,5 +27,7 @@ std::vector<WordID> CYXDictionaryManagerBase::SearchWords( std::string word_name
 
 std::shared_ptr<class CYXWord> CYXDictionaryManagerBase::GetWord( WordID word_id )
 {
+	if ( not kWordArchive.contains( word_id ) )
+		return nullptr;
 	return kWordArchive[word_id];
 }

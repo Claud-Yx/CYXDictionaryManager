@@ -196,7 +196,6 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">common.h</PrecompiledHeaderFile>
     </ClCompile>
-    <ClCompile Include="WordComponentBase.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Include\common.h" />
@@ -205,7 +204,6 @@
     <ClInclude Include="..\Include\KoreanManager.h" />
     <ClInclude Include="..\Include\SpanishManager.h" />
     <ClInclude Include="..\Include\Word.h" />
-    <ClInclude Include="..\Include\WordComponentBase.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

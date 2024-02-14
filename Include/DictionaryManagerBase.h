@@ -18,13 +18,16 @@ public:
 	virtual void AddNewWord(std::shared_ptr<class CYXWord> new_word);
 	virtual void DeleteWord(WordID word_id);
 	virtual std::vector<WordID> SearchWords(std::string word_name);
-	virtual std::shared_ptr<class CYXWord> GetWord(WordID word_id);
+
+	static std::shared_ptr<class CYXWord> GetWord(WordID word_id);
 
 // Word Archive Section
-protected:
+protected
+	 :
 	const ELanguageType _language_type{};
 
 private:
-	inline static std::unordered_map<uint64, std::shared_ptr<class CYXWord>> kWordArchive{};
+	inline static std::unordered_map<WordID, std::shared_ptr<class CYXWord>> kWordArchive{};
 };
 
+using DictionaryManager = CYXDictionaryManagerBase;
